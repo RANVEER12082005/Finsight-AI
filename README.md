@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+---
 
-## Getting Started
+## 🔮 Roadmap
 
-First, run the development server:
+- [x] ✅ Multi-account management
+- [x] ✅ Multi-currency support (12+ currencies)
+- [x] ✅ AI receipt scanner (Gemini Vision)
+- [x] ✅ Finance chatbot (Gemini AI)
+- [x] ✅ Budget tracking with real-time sync
+- [x] ✅ Spending limits with alerts
+- [x] ✅ Recurring transactions
+- [x] ✅ Savings goals with AI advice
+- [x] ✅ PDF export with branding
+- [x] ✅ Light/Dark theme
+- [x] ✅ Animated landing page (Framer Motion)
+- [x] ✅ Public marketing pages (Features, Pricing, Docs)
+- [ ] 🔜 Deploy to Vercel
+- [ ] 🔜 Mobile responsive design
+- [ ] 🔜 Email notifications (Resend)
+- [ ] 🔜 Monthly email reports
+- [ ] 🔜 Bank account integration
+- [ ] 🔜 Investment portfolio tracker
+- [ ] 🔜 Tax calculation helper
+- [ ] 🔜 React Native mobile app
+- [ ] 🔜 AI monthly spending predictions
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Key Files Reference
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| File | Purpose |
+|------|---------|
+| `src/app/page.tsx` | Animated landing page with Framer Motion |
+| `src/app/(main)/layout.tsx` | Dashboard sidebar with theme toggle |
+| `src/app/(main)/dashboard/page.tsx` | Main financial dashboard |
+| `src/app/(main)/transactions/page.tsx` | Transaction management + PDF export |
+| `src/app/(main)/transactions/scan/page.tsx` | AI receipt scanner UI |
+| `src/app/api/scan-receipt/route.ts` | Gemini Vision API handler |
+| `src/app/api/chat/route.ts` | Gemini chatbot API handler |
+| `src/app/api/dashboard/route.ts` | Aggregated dashboard stats |
+| `src/app/api/transactions/route.ts` | Transaction CRUD + balance sync |
+| `src/context/AccountContext.tsx` | Global account + currency state |
+| `src/hooks/useThemeMount.ts` | Hydration-safe theme hook |
+| `src/lib/db.ts` | MongoDB connection with caching |
+| `src/lib/exportPDF.ts` | Branded PDF report generator |
+| `src/models/` | All Mongoose data models |
+| `src/middleware.ts` | Clerk auth + route protection |
+| `.env.local` | API keys (never commit this!) |
+| `.env.example` | Environment variable template |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 👨‍💻 Author
 
-To learn more about Next.js, take a look at the following resources:
+**Ranveer Singh**
+B.Tech Computer Science Engineering
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🙏 Acknowledgements
 
-## Deploy on Vercel
+| Library / Service | Purpose |
+|-------------------|---------|
+| [Google Gemini AI](https://ai.google.dev) | AI engine for scanning, chatbot, and insights |
+| [Clerk](https://clerk.com) | Authentication and user management |
+| [Next.js](https://nextjs.org) | Full-stack React framework |
+| [MongoDB](https://mongodb.com) | NoSQL database |
+| [Tailwind CSS](https://tailwindcss.com) | Utility-first CSS framework |
+| [shadcn/ui](https://ui.shadcn.com) | Accessible UI component library |
+| [Framer Motion](https://framer.com/motion) | Animation library |
+| [Recharts](https://recharts.org) | Chart library for financial visualization |
+| [jsPDF](https://github.com/parallax/jsPDF) | PDF generation |
+| [Lucide React](https://lucide.dev) | Icon library |
+| [next-themes](https://github.com/pacocoursey/next-themes) | Theme management |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div align="center">
+
+**⭐ If this project helped you, please give it a star on GitHub! ⭐**
+
+> 💡 FinSight AI — Making personal finance intelligent, automated, and beautiful.
+
+Made with ❤️ by Ranveer Singh
+
+</div>
+EOF
